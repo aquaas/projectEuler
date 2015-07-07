@@ -15,7 +15,7 @@ int main()
 
 	int i,sum;
 	double tstart,tend;
-	int N=1e6;
+	int N=1e5;
 
 	tstart=clock();
 

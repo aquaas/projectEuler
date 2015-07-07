@@ -3,13 +3,10 @@
 #include "stdlib.h"
 
 #include <sys/time.h>
-//#include "~/cpp/libs/primesieve/include/primesieve.h"
-//#include </home/achim/cpp/libs//primesieve.h>
-//#include <primesieve.hpp>
 
+#include "primesieve.hpp"
+//#include "../include/primesieve.hpp"
 
-#include "../include/primesieve.hpp"
-//#include "../libs/primesieve/primesieve.h"
 
 //using namespace primesieve;
 
