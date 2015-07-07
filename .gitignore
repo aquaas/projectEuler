@@ -30,3 +30,6 @@
 # Input Data
 *.txt
 *.dat
+
+# Backups
+*.cpp~
