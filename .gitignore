@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+# Input Data
+*.txt
+*.dat
