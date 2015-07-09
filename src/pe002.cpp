@@ -3,7 +3,8 @@
 #include "stdlib.h"
 
 #include <sys/time.h>
-
+#include "primesieve.hpp"
+#include <armadillo>
 
 int* fib(int n);
 int sumInt(int* S, int N, int start, int spacer);
@@ -46,7 +47,7 @@ int* fib(int n)
 	{
 
 	    f[i]=f[i-1]+f[i-2];
-	    
+
 	}
 return f;
 
@@ -59,11 +60,10 @@ int sumInt(int* S, int N, int start, int spacer)
 
 	for(i=start;i<=N;i+=spacer)
 	{
-		
+
 		sum+=S[i];
 	}
 
 	return sum;
 
 }
-
