@@ -18,12 +18,9 @@ LIBSDIR		= libs/ #directory for libraries
 
 INCLUDES	= include/ #directory for header files
 
-CPPFLAGS  	= -g -Wall -O2 	-std=c++11 # c++ compiler flags
+CPPFLAGS  	= -g -Wall -O2 -std=c++11 # c++ compiler flags
 
 LDFLAGS 	= -g -Wall -O2 -std=c++11 -Wl,-rpath=$(LIBSDIR) # linker flags
-
-A001 = pe001
-S001 = ps001
 
 SRC 	= $(wildcard src/*.cpp) #source files associated with program
 
@@ -38,7 +35,7 @@ obj/%.o: src/%.cpp
 %:
 	$(CPP) -I $(INCLUDES) -L $(LIBSDIR) $(LDFLAGS) -o $*.out src/$*.cpp $(LIBS)
 
-$(A001): obj/$(A001).o
+pe001: obj/pe001.o
 	$(CPP) -L $(LIBSDIR) $(LDFLAGS) -o $@.out $? $(LIBS)
 
 clean:
@@ -46,6 +43,11 @@ clean:
 
 clean-dist:
 	$(RM) $(OUT)
+
+clean-%:
+	$(RM) $*.out
+	$(RM) obj/$*.o
+
 
 #all: program1 program2
 

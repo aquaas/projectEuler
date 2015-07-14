@@ -9,8 +9,8 @@
 *.pch
 
 # Compiled Dynamic libraries
-*.so
-*.so.*
+#*.so
+#*.so.*
 *.dylib
 *.dll
 
@@ -29,8 +29,11 @@
 *.app
 
 # Input Data
-*.txt
-*.dat
+#*.txt
+#*.dat
 
 # Backups
 *.cpp~
+*.swp
+makefile~
+.gitignore~

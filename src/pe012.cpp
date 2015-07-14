@@ -66,7 +66,8 @@ max_pair max_array(long a[], long num_elements)
 	    A.index=i;
 	 }
    }
-   return(A);
+   return 0;
+
 }
 
 
